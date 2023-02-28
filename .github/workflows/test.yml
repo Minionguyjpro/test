@@ -1,0 +1,10 @@
+name: TEST
+on:
+  push:
+jobs:
+ test:
+  runs-on: ubuntu-latest
+  steps:
+    - name: TELL
+      run: |
+        echo ${{ github.event.release.unreleased }}
