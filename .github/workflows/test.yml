@@ -7,4 +7,4 @@ jobs:
   steps:
     - name: TELL
       run: |
-        echo ${{ github.event.release.unreleased }}
+        echo ${{ github.event.release.types.unpublished }}
